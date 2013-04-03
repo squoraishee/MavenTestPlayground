@@ -1,0 +1,6 @@
+com.example.mavetestplayround.R
+com.example.mavetestplayround.R$attr
+com.example.mavetestplayround.R$drawable
+com.example.mavetestplayround.R$layout
+com.example.mavetestplayround.R$string
+com.example.mavetestplayround.R$style
