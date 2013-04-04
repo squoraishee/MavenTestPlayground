@@ -47,7 +47,7 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>com.crashlytics.android<</groupId>
+                  <groupId>com.crashlytics.android</groupId>
                   <artifactId>crashlytics</artifactId>
                   <version>0.9.4</version>
                   <overWrite>true</overWrite>
