@@ -27,4 +27,39 @@
             <url>http://nexus.mtvi.com/nexus/content/repositories/thirdparty/</url>
         </repository>
     </distributionManagement>
+<build>
+  <plugin>
+    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+    <artifactId>android-maven-plugin</artifactId>
+    <inherited>true</inherited>
+     <configuration>
+     <sign>
+        <debug>false</debug>
+     </sign>
+                            <manifest>
+                                <debuggable>false</debuggable>
+                                <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
+                            </manifest>
+                            <proguard>
+                                <skip>false</skip>
+                            </proguard>
+                            <sdk>
+                              <path>
+                                /Users/hudson/android/
+                              </path>
+                            </sdk>
+                        </configuration>
+
+                        <executions>
+
+                            <execution>
+                                <id>alignApk</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>zipalign</goal>
+                                </goals>
+                            </execution>
+                        </executions> <!-- We do  not need a separate dependency plugin for the android maven plugin -->
+    </plugin>
+</build>
 </project> 
