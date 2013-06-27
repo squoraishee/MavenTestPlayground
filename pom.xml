@@ -6,25 +6,26 @@
  <parent>
 <groupId>com.vmn.android</groupId>
 <artifactId>master-template</artifactId>
-<version>1.0.2-SNAPSHOT</version>
+<version>1.0.5-SNAPSHOT</version>
 </parent>
  <modelVersion>4.0.0</modelVersion>
  <groupId>com.vmn.android</groupId>
  <artifactId>testcomponent</artifactId>
  <version>1.0.0-SNAPSHOT</version>
- <packaging>apk</packaging>
+ <packaging>jar</packaging>
  <name>MavenPlayground</name>
 <repositories>
-        <repository>
-            <id>vmn-android-3rdparty</id>
-            <url>http://nexus.mtvi.com/nexus/content/repositories/thirdparty-snapshots/</url>
+         <repository>
+            <id>mtvn-proximity</id>
+            <name>RemoteRepo</name>
+            <url>http://nexus.mtvi.com/nexus/content/repositories/snapshots</url>
         </repository>
     </repositories>
     <distributionManagement>
         <repository>
-            <id>vmn-android-3rdparty</id>
+            <id>mtvn-proximity</id>
             <name>RemoteRepo</name>
-            <url>http://nexus.mtvi.com/nexus/content/repositories/thirdparty/</url>
+            <url>http://nexus.mtvi.com/nexus/content/groups/public/</url>
         </repository>
     </distributionManagement>
     <dependencies>
@@ -35,41 +36,4 @@
             <scope>provided</scope>
         </dependency>
       </dependencies>
-<build>
-  <plugins>
-  <plugin>
-    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-    <artifactId>android-maven-plugin</artifactId>
-    <inherited>true</inherited>
-     <configuration>
-     <sign>
-        <debug>false</debug>
-     </sign>
-                            <manifest>
-                                <debuggable>false</debuggable>
-                                <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
-                            </manifest>
-                            <proguard>
-                                <skip>false</skip>
-                            </proguard>
-                            <sdk>
-                              <path>
-                                /Users/hudson/android/
-                              </path>
-                            </sdk>
-                        </configuration>
-
-                        <executions>
-
-                            <execution>
-                                <id>alignApk</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>zipalign</goal>
-                                </goals>
-                            </execution>
-                        </executions> <!-- We do  not need a separate dependency plugin for the android maven plugin -->
-    </plugin>
-  </plugins>
-</build>
 </project> 
