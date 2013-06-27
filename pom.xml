@@ -28,6 +28,7 @@
         </repository>
     </distributionManagement>
 <build>
+  <plugins>
   <plugin>
     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
     <artifactId>android-maven-plugin</artifactId>
@@ -61,5 +62,6 @@
                             </execution>
                         </executions> <!-- We do  not need a separate dependency plugin for the android maven plugin -->
     </plugin>
+  </plugins>
 </build>
 </project> 
