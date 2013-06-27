@@ -27,6 +27,14 @@
             <url>http://nexus.mtvi.com/nexus/content/repositories/thirdparty/</url>
         </repository>
     </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>4.1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+      </dependencies>
 <build>
   <plugins>
   <plugin>
