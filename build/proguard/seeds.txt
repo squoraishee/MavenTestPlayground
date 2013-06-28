@@ -1,5 +1,0 @@
-android.test.mock.MockApplication
-android.test.mock.MockContentProvider
-com.crashlytics.android.IdManager$DeviceIdentifierType: com.crashlytics.android.IdManager$DeviceIdentifierType[] values()
-com.crashlytics.android.IdManager$DeviceIdentifierType: com.crashlytics.android.IdManager$DeviceIdentifierType valueOf(java.lang.String)
-com.example.maventestplayground.MavenTestProjectActvitiy
