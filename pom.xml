@@ -37,4 +37,8 @@
         </dependency>
       </dependencies>
       <!-- this adding a build section would overwrite the entire build process you need to inhereit a section from the parent itself -->
+      <build>
+           <finalName>testcomponent</finalName> <!-- this final name tag will let you change the final build name -->
+            <directory>build</directory>
+      </build>
 </project> 
