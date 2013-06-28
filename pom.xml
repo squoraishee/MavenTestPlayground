@@ -12,7 +12,7 @@
  <groupId>com.vmn.android</groupId>
  <artifactId>testcomponent</artifactId>
  <version>1.0.0-SNAPSHOT</version>
- <packaging>apk</packaging>
+ <packaging>jar</packaging>
  <name>MavenPlayground</name>
 <repositories>
          <repository>
@@ -39,6 +39,7 @@
       <build>
         <plugins>
          <plugin>
+            <inherited>true</inherited>
             <groupId>com.jayway.maven.plugins.android.generation2</groupId>
             <version>3.6.0</version>
             <artifactId>android-maven-plugin</artifactId>
