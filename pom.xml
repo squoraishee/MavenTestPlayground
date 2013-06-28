@@ -36,4 +36,10 @@
             <scope>provided</scope>
         </dependency>
       </dependencies>
+      <build>
+         <plugin>
+            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+            <artifactId>android-maven-plugin</artifactId>
+          </plugin>
+      </build>
 </project> 
