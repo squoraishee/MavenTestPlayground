@@ -49,5 +49,16 @@
       <build>
            <finalName>testcomponent</finalName> <!-- this final name tag will let you change the final build name -->
             <directory>build</directory>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                    </configuration>
+                </plugin>
+           </plugins>
       </build>
 </project> 
