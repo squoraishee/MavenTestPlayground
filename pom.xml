@@ -11,9 +11,18 @@
  <modelVersion>4.0.0</modelVersion>
  <groupId>com.vmn.android</groupId>
  <artifactId>testcomponent</artifactId>
- <version>1.0.0-SNAPSHOT</version>
+ <version>${artifact.version}</version>
  <packaging>apk</packaging>
  <name>MavenPlayground</name>
+ <description>${artifact.description}</description>
+<developers>
+  <developer>
+    <id>${developer.id}</id>
+    <roles>
+        <role>Developer</role>
+      </roles>
+  </developer>
+<developers>
 <repositories>
          <repository>
             <id>mtvn-proximity</id>
